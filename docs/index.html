@@ -3,41 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vignesh Kumar Selvam - Portfolio</title>
+    <title>Vignesh Kumar Selvam - Cloud Infrastructure Engineer</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
-            padding: 0;
             background-color: #f4f4f9;
             color: #333;
         }
         header {
-            background-color: #0078d7;
+            background: linear-gradient(135deg, #0078d7, #005bb5);
             color: white;
             padding: 20px 10%;
             text-align: center;
         }
         header h1 {
             margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 5px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: #005bb5;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         section {
-            padding: 20px 10%;
+            padding: 40px 10%;
         }
         .section-title {
             color: #0078d7;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        .content {
+            margin-bottom: 30px;
+        }
+        .content h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .content p {
+            margin: 5px 0;
+        }
+        .content ul {
+            margin: 10px 0 20px 20px;
+        }
+        .content ul li {
             margin-bottom: 10px;
         }
-        .experience, .skills {
-            margin-bottom: 20px;
-        }
-        .contact a {
-            color: #0078d7;
-            text-decoration: none;
-        }
-        .contact a:hover {
-            text-decoration: underline;
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0078d7;
+            color: white;
         }
     </style>
 </head>
@@ -45,47 +76,72 @@
     <header>
         <h1>Vignesh Kumar Selvam</h1>
         <p>Cloud Infrastructure Engineer</p>
-        <p><a href="mailto:k.s.vignesh@live.com">k.s.vignesh@live.com</a> | +91 9551313768 | <a href="https://www.linkedin.com/in/kvigneshs/" target="_blank">LinkedIn</a></p>
+        <p>📧 <a href="mailto:k.s.vignesh@live.com" style="color: white; text-decoration: underline;">k.s.vignesh@live.com</a> | 📞 +91 9551313768</p>
+        <p><a href="https://www.linkedin.com/in/kvigneshs/" target="_blank" style="color: white; text-decoration: underline;">LinkedIn Profile</a></p>
     </header>
-    
-    <section>
+
+    <nav>
+        <a href="#summary">Summary</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+    </nav>
+
+    <section id="summary">
         <h2 class="section-title">Summary</h2>
-        <p>Experienced Cloud Infrastructure Engineer with 9+ years of expertise in managing, deploying, and automating cloud solutions on Azure and IBM platforms. Proficient in scripting, DevOps tools, and low-code platforms, delivering secure and efficient infrastructure solutions.</p>
+        <p>Experienced Cloud Infrastructure Engineer with over 9 years of expertise in designing, deploying, and managing secure cloud infrastructure solutions. Proficient in Azure, IBM Cloud, and various DevOps tools, delivering automation and cost-efficient solutions. Skilled in scripting and low-code platforms to support diverse business needs.</p>
     </section>
 
-    <section>
+    <section id="experience">
         <h2 class="section-title">Experience</h2>
-        <div class="experience">
-            <h3>Cloud Infrastructure Engineer | FE Fundinfo India Pvt Ltd</h3>
-            <p>09/2021 - Present | Chennai, India</p>
+
+        <div class="content">
+            <h3>Cloud Infrastructure Engineer</h3>
+            <p><strong>FE Fundinfo India Pvt Ltd |</strong> Sep 2021 - Present | Chennai, India</p>
             <ul>
-                <li>Developed infrastructure as code using Terraform and Azure PowerShell.</li>
-                <li>Automated resource deployments, saving 30+ human hours/month.</li>
-                <li>Implemented security solutions including Private Link and DNS.</li>
+                <li>Developed reusable infrastructure as code using Terraform and Azure PowerShell.</li>
+                <li>Deployed and managed resources, saving 30+ human hours/month through automation.</li>
+                <li>Implemented security features like Private Link, DNS, and Service Endpoints.</li>
+                <li>Managed hybrid cloud environments with 75+ IaaS, 28 PaaS, and 7 SaaS resources.</li>
+                <li>Documented 20+ technical guides on best practices and procedures.</li>
             </ul>
         </div>
-        <!-- Add other experiences similarly -->
+
+        <div class="content">
+            <h3>Senior Network and Server Administrator</h3>
+            <p><strong>Tradesocio India Pvt Ltd |</strong> Jan 2018 - Sep 2021 | Chennai, India</p>
+            <ul>
+                <li>Managed infrastructure across Azure, IBM, and Alibaba Cloud platforms.</li>
+                <li>Designed build and release pipelines for 14 projects in 20 environments.</li>
+                <li>Implemented disaster recovery solutions with high availability strategies.</li>
+                <li>Mentored a team of 9 members, fostering skill development and task management.</li>
+            </ul>
+        </div>
     </section>
 
-    <section>
+    <section id="skills">
         <h2 class="section-title">Skills</h2>
-        <div class="skills">
+        <div class="content">
             <ul>
-                <li>Cloud Platforms: Azure, AWS, IBM Cloud</li>
-                <li>DevOps Tools: Terraform, Azure DevOps, Docker</li>
-                <li>Programming: Bash, PowerShell</li>
+                <li><strong>Cloud Platforms:</strong> Azure, AWS, IBM Cloud, Alibaba Cloud</li>
+                <li><strong>DevOps Tools:</strong> Terraform, Azure DevOps, GitLab Ops, Docker</li>
+                <li><strong>Programming:</strong> Bash, PowerShell, YAML</li>
+                <li><strong>Security:</strong> Private DNS, Azure Sentinel, Microsoft Defender</li>
+                <li><strong>Networking:</strong> TCP/UDP, VPNs, Load Balancers</li>
             </ul>
         </div>
     </section>
 
-    <section>
+    <section id="education">
         <h2 class="section-title">Education</h2>
-        <p>Bachelor of Engineering (ECE) | Vel Tech Multi Tech, 2014</p>
-        <p>Diploma in Engineering (ECE) | Ponnaiyah Ramajayam Polytechnic College, 2011</p>
+        <div class="content">
+            <p><strong>Bachelor of Engineering (ECE):</strong> Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College, 2014</p>
+            <p><strong>Diploma in Engineering (ECE):</strong> Ponnaiyah Ramajayam Polytechnic College, 2011</p>
+        </div>
     </section>
 
     <footer>
-        <p style="text-align: center; padding: 20px 0;">© 2024 Vignesh Kumar Selvam</p>
+        <p>© 2024 Vignesh Kumar Selvam | Designed with ❤️</p>
     </footer>
 </body>
 </html>
